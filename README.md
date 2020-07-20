@@ -1,4 +1,4 @@
-# Diagnose dotnet apps on PDM3.
+# Diagnose dotnet apps inside running container.
 
 These files reside in https://github.com/he2s/tracing and the Docker image is also available as dsfnctnl/tracing:<VERSION_TAG>.
 
@@ -15,6 +15,8 @@ The 'run.sh' script needs a container hash or name as a target and the version t
 ```bash
 ./run.sh aspnetcoreapp 0.1
 ```
+
+The same goes for 'pull.sh' and 'push.sh' whoch will, provided with a version tag push or pull images from a specified repo on the Docker Hub.
 
 Links or info about the used tools are generally found [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics) or by googling for 'dotnet-trace', 'dotnet-counters', 'dotnet-dump', 'dotnet-gcdumop', 'lldb sos dotnetcore', 'PerfView' or such words. Names that are important in that domain are Damian Edwards, David Fowler, Ben Adams, Vance Morrison, Adam Sitnik, Matt Warren, Mike Rousos. Podcasts, blog posts and talks of those people on YouTube might be relevant.
 
