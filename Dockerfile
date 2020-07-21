@@ -12,8 +12,10 @@ RUN dotnet tool install --global dotnet-trace \
 	&& dotnet-sos install
 
 RUN apt-get -y update && apt-get -y install tmux zsh git vim fish tcpdump glances \
-	lldb tiptop autoconf gcc g++ build-essential \
+	lldb tiptop autoconf gcc g++ build-essential zlib1g-dev gdb iotop lsof sysstat \
 	&& apt-get -y autoremove && apt-get -y clean
 
-RUN git clone https://github.com/hishamhm/htop && cd htop && git checkout 3.0.0beta5 && ./autogen.sh && ./configure && make && cp -a htop /usr/bin/
+RUN git clone https://github.com/microsoft/ProcDump-for-Linux && cd ProcDump-for-Linux && make && make install && make clean
+
+RUN git clone https://github.com/hishamhm/htop && cd htop && git checkout 3.0.0beta5 && ./autogen.sh && ./configure && make && cp -a htop /usr/bin/ && make clean
 
