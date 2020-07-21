@@ -30,7 +30,7 @@ The same goes for 'pull.sh' and 'push.sh' which will, provided with a version ta
 
 ### dotnet core diagnostics tools
 
-Links or info about the used tools are generally found [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics) or by googling for 'dotnet-trace', 'dotnet-counters', 'dotnet-dump', 'dotnet-gcdumop', 'lldb sos dotnetcore', 'PerfView' or such words. Names that are important in that domain are Damian Edwards, David Fowler, Ben Adams, Vance Morrison, Adam Sitnik, Matt Warren, Mike Rousos. Podcasts, blog posts and talks of those people on YouTube might be relevant.
+Links or info about the used tools are generally found [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics) or by googling for 'dotnet-trace', 'dotnet-counters', 'dotnet-dump', 'dotnet-gcdump', 'lldb sos dotnetcore', 'PerfView' or such words. Names that are important in that domain are Damian Edwards, David Fowler, Ben Adams, Vance Morrison, Adam Sitnik, Matt Warren, Mike Rousos. Podcasts, blog posts and talks of those people on YouTube might be relevant.
 
 This only works with apps run on CoreCLR 3.1!
 
