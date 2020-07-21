@@ -1,6 +1,6 @@
 # Diagnose dotnetcore apps inside running container.
 
-This repo contains tooling to generate and use a docker image to diagnose issues in containers running dotnetcore apps.
+This repo contains tooling to generate and use a docker image to diagnose issues in containers running dotnet core apps.
 
 These files reside in https://github.com/he2s/tracing and the Docker image is also available as dsfnctnl/tracing:<VERSION_TAG>.
 
