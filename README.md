@@ -16,9 +16,13 @@ The 'run.sh' script needs a container hash or name as a target and the version t
 ./run.sh aspnetcoreapp 0.1
 ```
 
-The same goes for 'pull.sh' and 'push.sh' whoch will, provided with a version tag push or pull images from a specified repo on the Docker Hub.
+The same goes for 'pull.sh' and 'push.sh' which will, provided with a version tag push or pull images from the said repo on the Docker Hub.
 
 Links or info about the used tools are generally found [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics) or by googling for 'dotnet-trace', 'dotnet-counters', 'dotnet-dump', 'dotnet-gcdumop', 'lldb sos dotnetcore', 'PerfView' or such words. Names that are important in that domain are Damian Edwards, David Fowler, Ben Adams, Vance Morrison, Adam Sitnik, Matt Warren, Mike Rousos. Podcasts, blog posts and talks of those people on YouTube might be relevant.
+
+The tooling around lldb does currently not work correctly as far as SOS is concerned.
+
+htop is available in version 3.0.0beta5 including support for some new OS/CPU performance counters. Further info at [the developer's page](https://hisham.hm/htop/).
 
 Further info also [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/debug-memory-leak).
 
