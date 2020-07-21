@@ -22,8 +22,10 @@ Links or info about the used tools are generally found [here](https://docs.micro
 
 The tooling around lldb does currently not work correctly as far as SOS is concerned.
 
-htop is available in version 3.0.0beta5 including support for some new OS/CPU performance counters. Further info at [the developer's page](https://hisham.hm/htop/).
+htop is available in version 3.0.0beta5 including support for some new OS/CPU performance counters. Further info at [the developer's page](https://hisham.hm/htop/). Further info also [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/debug-memory-leak).
 
-Further info also [here](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/debug-memory-leak).
+Also included is the perfcollect script from Microsoft which runs some installations of Linux performance tools including the perf-tools and collects data to be shown in the Windows based PerfView.exe. Sadly perf is currently not possible on some devices.
+
+
 
 This list will be extended as time goes by.

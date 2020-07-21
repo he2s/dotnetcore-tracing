@@ -1,5 +1,5 @@
 #!/bin/bash
 
-docker login
+#docker login
 docker pull dsfnctnl/tracing:${1}
-docker logout
+#docker logout
