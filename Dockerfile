@@ -15,5 +15,8 @@ RUN apt-get -y update && apt-get -y install tmux zsh git vim fish tcpdump glance
 	lldb tiptop autoconf gcc g++ build-essential \
 	&& apt-get -y autoremove && apt-get -y clean
 
+RUN wget -q https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+    && dpkg -i packages-microsoft-prod.deb && apt-get -y update && apt-get -y install procdump
+
 RUN git clone https://github.com/hishamhm/htop && cd htop && git checkout 3.0.0beta5 && ./autogen.sh && ./configure && make && cp -a htop /usr/bin/
 

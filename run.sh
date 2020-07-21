@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -it --net=host -v /port:/port -v /container:/tmp --pid=container:${1} --cap-add ALL --name tracing --privileged ${3}tracing:${2}
+docker run -it -v /tracing-port:/tracing-port -v /container:/tmp --net=host --pid=container:${1} --cap-add ALL --privileged --name dotnetcore-tracing ${3}dotnetcore-tracing:${2}
