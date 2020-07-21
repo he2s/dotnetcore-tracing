@@ -61,8 +61,6 @@ Also included is the perfcollect script from Microsoft which runs some installat
 
 Sadly perf is currently not possible on some devices.
 
-Also provided is Microsoft's brand new Linux port of ProcDump. See [here](https://github.com/Microsoft/ProcDump-for-Linux).
-
 This list will be extended as time goes by.
 
 General info is also found [here](http://www.brendangregg.com/linuxperf.html).
