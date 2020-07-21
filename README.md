@@ -41,7 +41,7 @@ dotnet counters ps                 # Returning the PIDs of any running dotnet co
 dotnet counters monitor -p 1       # View live some perf counters (like GC, threads, ...) of PID 1.
 dotnet gcdump collect -p 1         # Generate GC dump of PID 1 in the current working directory. The filename is then displayed.
 dotnet trace collect -p 1          # Collect traces of PID 1 in the current working directory. This file will be called 'trace.nettrace' and can be read by 'PerfView.exe' on Windows.
-mv trace.nettrace /tracing-port    # Copy the generated tarce file to '/port', which is already mounted to the host filesystem's '/tracing-port'. From there you can fetch it to Windows.
+mv trace.nettrace /tracing-port    # Copy the generated trace file to '/port', which is already mounted to the host filesystem's '/tracing-port'. From there you can fetch it to Windows.
 # ....
 ```
 
