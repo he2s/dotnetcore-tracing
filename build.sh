@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t tracing:${1}
+docker build . -t dotnetcore-tracing:${1}
