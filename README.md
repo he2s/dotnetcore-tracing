@@ -2,7 +2,7 @@
 
 This repo contains tooling to generate and use a docker image to diagnose issues in containers running dotnet core apps.
 
-These files reside in https://github.com/he2s/tracing and the Docker image is also available as dsfnctnl/tracing:<VERSION_TAG>.
+These files reside in https://github.com/he2s/dotnetcore-tracing and the Docker image is also available as dsfnctnl/tracing:<VERSION_TAG>.
 
 Generally you will take the 'build.sh' script to build am image from the 'Dockerfile'. This Dockerfile may be extended as you wish. Then you push and pull the images from their repo. If a not customized image already present in the repo, like the '1.0' version is sufficient, just pull it, omitting the build step.
 
