@@ -15,6 +15,5 @@ RUN apt-get -y update && apt-get -y install tmux zsh git vim fish tcpdump glance
 	lldb tiptop autoconf gcc g++ build-essential \
 	&& apt-get -y autoremove && apt-get -y clean
 
-RUN git clone https://github.com/hishamhm/htop && cd htop && git checkout 3.0.0beta5 && ./autogen.sh && ./configure && make && cp -a htop /ust/bin/
+RUN git clone https://github.com/hishamhm/htop && cd htop && git checkout 3.0.0beta5 && ./autogen.sh && ./configure && make && cp -a htop /usr/bin/
 
-ENV PATH "$PATH:/root/.dotnet/tools"
